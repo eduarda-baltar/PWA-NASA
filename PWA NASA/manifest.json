@@ -1,0 +1,17 @@
+{
+    "name": "Astro-Guia PWA",
+    "short_name": "AstroGuia",
+    "description": "Seu guia para o céu noturno, usando geolocalização e APIs da NASA.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#0F1A2A",
+    "theme_color": "#0F1A2A",
+    "icons": [ 
+        {
+            "src": "icons/icon-500x500.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        }
+    ]
+}

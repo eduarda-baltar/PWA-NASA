@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro-Guia PWA</title>
+
+    <link rel="icon" href="icons/icon-192x192.png" type="image/png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0F1A2A" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  
+  <body>
+    <header>
+      <div class="header-content">
+        <h1 id="app-title">Astro-Guia</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="status-section api-card">
+        <h2>Status e Localização</h2>
+        <p id="status-message">Iniciando o PWA...</p>
+        <p id="user-location"></p>
+      </section>
+
+      <section class="api-card nasa-apod">
+        <h2>Imagem Astronômica do Dia (NASA APOD)</h2>
+        <div id="apod-content">
+          <p>Carregando conteúdo astronômico...</p>
+        </div>
+      </section>
+
+      <section class="api-card iss-info">
+        <h2>Rastreamento da Estação Espacial Internacional (ISS)</h2>
+
+        <div id="iss-map"></div>
+
+        <div id="iss-pass-times" class="iss-data-panel">
+          <p>Buscando a posição atual da Estação Espacial...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
